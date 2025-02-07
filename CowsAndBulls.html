@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cows and Bulls</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+      }
+      input {
+        padding: 10px;
+        font-size: 18px;
+        margin: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      #outerList {
+        visibility: hidden;
+      }
+      #msg {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cows and Bulls Game</h1>
+    <p>Guess the 4-unique-digits number:</p>
+    <input type="text" id="guessInput" maxlength="4" />
+    <button onclick="submitGuess()">Submit</button>
+    <button onclick="giveUp()">Give Up</button>
+    <div id="msg"></div>
+    <div id="outerList">
+      <p>Trials</p>
+      <ul id="trials"></ul>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>

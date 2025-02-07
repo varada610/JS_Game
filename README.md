@@ -1,2 +1,2 @@
 # JS_Game
-Cows and Bulls JS and HYML
+Cows and Bulls JS and HTML

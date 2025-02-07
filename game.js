@@ -30,7 +30,8 @@ function getElementById(element) {
 function processAGuess(guess) {
     if (!(validateGuess(guess))) return;
 
-		let {cows, bulls} = checkCowsAndBulls(guess);
+	displayMessage(``);
+    let {cows, bulls} = checkCowsAndBulls(guess);
     let grading = "Cows: " + cows + "   Bulls: "+ bulls;
     attempts.push(guess);
     count += 1;
